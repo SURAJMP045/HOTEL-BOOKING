@@ -1,6 +1,8 @@
 import React from "react";
 import "../assets/stylesheet/HeroSection.css";
 import hero from "../assets/hero.png";
+import SingleRoom from '../assets/SingleRoom.png'
+import SideRoom from '../assets/SideRoom.png'
 import { Link } from "react-router-dom";
 
 const HeroSection = () => {
@@ -13,12 +15,12 @@ const HeroSection = () => {
           className="image image-1"
         />
         <img
-          src={hero}
+          src={SingleRoom}
           alt="Room 2"
           className="image image-2"
         />
         <img
-          src={hero}
+          src={SideRoom}
           alt="Room 3"
           className="image image-3"
         />

@@ -1,7 +1,7 @@
 import React from "react";
 import "../assets/stylesheet/HeaderSection.css";
 import { Link } from "react-router-dom";
-import heroImage from "../assets/hero.png"; 
+import heroImage from "../assets/homehero.png"; 
 import Navbar from "./Navbar";
 
 const HeaderSection = () => {

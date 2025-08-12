@@ -1,8 +1,8 @@
 import React from "react";
 import "../assets/stylesheet/LuxuryRooms.css";
-import room1 from "../assets/room.jpg";
-import room2 from "../assets/room.jpg";
-import room3 from "../assets/room.jpg";
+import Luxury1 from "../assets/Luxury1.png";
+import Luxury2 from "../assets/Luxury2.png";
+import Luxury3 from "../assets/Luxury3.png";
 import { FaBed, FaUserFriends, FaStar } from "react-icons/fa";
 
 const rooms = [
@@ -15,7 +15,7 @@ const rooms = [
     guests: 4,
     rating: 4.9,
     reviews: "2k",
-    image: room1,
+    image: Luxury1,
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const rooms = [
     guests: 5,
     rating: 4.8,
     reviews: "1.5k",
-    image: room2,
+    image: Luxury2,
   },
   {
     id: 3,
@@ -37,7 +37,7 @@ const rooms = [
     guests: 3,
     rating: 4.7,
     reviews: "900",
-    image: room3,
+    image: Luxury3,
   },
 ];
 

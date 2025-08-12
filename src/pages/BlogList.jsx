@@ -1,5 +1,5 @@
 import React from 'react'
-import aboutBg from '../assets/contact-bg.png'
+import aboutBg from '../assets/SideRoom.png'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import BlogGrid from '../components/BlogGrid'

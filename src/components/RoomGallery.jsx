@@ -2,12 +2,14 @@ import React from 'react';
 import '../assets/stylesheet/RoomGallery.css';
 
 const images = [
-  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
-  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
-  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
-  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
-  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
-  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+  "https://html.nextwpcook.com/hostily/assets/img/features/instagram-3.jpg",
+  "https://html.nextwpcook.com/hostily/assets/img/features/instagram-2.jpg",
+  "https://html.nextwpcook.com/hostily/assets/img/features/instagram-1.jpg",
+  "https://html.nextwpcook.com/hostily/assets/img/features/instagram-4.jpg",
+  "https://html.nextwpcook.com/hostily/assets/img/features/instagram-5.jpg",
+  "https://html.nextwpcook.com/hostily/assets/img/features/instagram-6.jpg",
+  "https://html.nextwpcook.com/hostily/assets/img/features/instagram-2.jpg",
+  "https://html.nextwpcook.com/hostily/assets/img/features/instagram-3.jpg",
 ];
 
 const RoomGallery = () => {

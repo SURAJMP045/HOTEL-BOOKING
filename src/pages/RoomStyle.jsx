@@ -1,5 +1,5 @@
 import React from 'react'
-import aboutBg from '../assets/contact-bg.png'
+import aboutBg from '../assets/SingleRoom.png'
 import '../assets/stylesheet/pagestyle/RoomStyle.css'
 import RoomList from '../components/RoomList'
 import Navbar from '../components/Navbar'

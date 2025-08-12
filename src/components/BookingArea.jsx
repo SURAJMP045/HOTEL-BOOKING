@@ -1,6 +1,6 @@
 import React from "react";
 import "../assets/stylesheet/BookingArea.css";
-import SingleRoom from '../assets/image.png'
+import BookingAreaPng from '../assets/BookingArea.png'
 
 const BookingArea = () => {
   return (
@@ -45,7 +45,7 @@ const BookingArea = () => {
   </div>
 
   <div class="room-center">
-    <img src={SingleRoom} alt="Single Room" />
+    <img src={BookingAreaPng} alt="Single Room" />
   </div>
 
   <div class="room-right">
