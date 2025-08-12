@@ -1,0 +1,95 @@
+.single-room-container {
+  width: 70%;
+  margin: 2rem auto;
+}
+
+/* Card layout */
+.single-room-card {
+  display: flex;
+  align-items: center;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  overflow: hidden;
+  background: #fff;
+}
+
+/* Left - Image */
+.room-image {
+  flex: 1;
+}
+
+.room-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Middle - Details */
+.room-details {
+  flex: 2;
+  padding: 1.5rem;
+}
+
+.room-details h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.room-details p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.room-meta {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Right - Extra Info */
+.room-extra {
+  flex: 1;
+  padding: 1.5rem;
+  border-left: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.room-price {
+  font-weight: bold;
+  color: #caa65b;
+  font-size: 1rem;
+}
+
+.room-price span {
+  font-weight: normal;
+}
+
+.room-rating {
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.room-rating .reviews {
+  margin-left: 0.3rem;
+  color: #777;
+}
+
+.read-more {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.read-more:hover {
+  color: #caa65b;
+}

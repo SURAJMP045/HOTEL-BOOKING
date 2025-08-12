@@ -1,0 +1,97 @@
+.room-detail-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  width: 90%;
+  margin: 2rem auto;
+}
+
+/* Left Section */
+.room-left {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.room-left img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+/* Bottom Info Bar */
+.info-bar {
+  display: flex;
+  gap: 2rem;
+  margin-top: 0.8rem;
+  font-size: 0.95rem;
+  color: #777;
+}
+
+.info-bar span {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+/* Right Section */
+.room-right {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Search Box */
+.search-box {
+  display: flex;
+  border: 1px solid #ddd;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 0.7rem;
+  border: none;
+  outline: none;
+}
+
+.search-box button {
+  padding: 0 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Category Box */
+.category-box {
+  border: 1px solid #eee;
+  padding: 1.2rem;
+}
+
+.category-box h3 {
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  border-bottom: 2px solid #caa65b;
+  display: inline-block;
+  padding-bottom: 0.2rem;
+}
+
+.category-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.category-box li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.category-box li:hover {
+  color: #caa65b;
+}

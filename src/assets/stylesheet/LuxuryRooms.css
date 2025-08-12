@@ -1,0 +1,151 @@
+.luxury-section {
+  padding: 60px 80px;
+  background: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.luxury-header {
+  margin-bottom: 40px;
+}
+
+.luxury-subtitle {
+  color: #b88b2d;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.luxury-title {
+  font-size: 38px;
+  font-weight: 700;
+  margin-top: 8px;
+  color: #111;
+}
+
+.luxury-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #f9f9f9;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.95);
+  text-align: center;
+  padding: 25px;
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+}
+
+.card-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.card-header h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111;
+}
+
+.price {
+  color: #b88b2d;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.desc {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+  margin: 10px 0 15px;
+  max-width: 80%;
+}
+
+.room-info {
+  display: flex;
+  gap: 25px;
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.room-info svg {
+  color: #b88b2d;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.read-more {
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  color: #111;
+  transition: color 0.3s ease;
+}
+
+.read-more:hover {
+  color: #b88b2d;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #111;
+}
+
+.rating svg {
+  color: #b88b2d;
+  font-size: 16px;
+}
+
+/* Hover Animation */
+.card:hover .card-overlay {
+  transform: translateY(0);
+}
+
+.card-image {
+  transition: transform 0.4s ease;
+}
+
+.card:hover .card-image {
+  transform: scale(1.08);
+}
