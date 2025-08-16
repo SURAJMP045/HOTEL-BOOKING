@@ -5,32 +5,52 @@ import BookingAreaPng from "../assets/BookingArea.png";
 const BookingArea = () => {
   return (
     <div>
+      {/* Booking Section */}
       <section className="booking-section">
         <div className="booking-header">
           <p className="booking-subtitle">Booking Area</p>
           <h2 className="booking-title">Find the best hotels in Your area</h2>
         </div>
 
-        <div className="booking-form-container">
-          <form className="booking-form">
-            <input type="date" placeholder="Check-in" />
-            <input type="date" placeholder="Check-out" />
-            <select>
-              <option>1 Guest</option>
-              <option>2 Guests</option>
-              <option>3 Guests</option>
-              <option>4+ Guests</option>
-            </select>
-            <button type="submit">Search</button>
+        <div className="reservation-form-container">
+          <form className="reservation-form">
+            {/* Check-in */}
+            <div className="reservation-field">
+              <label>Check In</label>
+              <input type="date" />
+            </div>
+
+            {/* Check-out */}
+            <div className="reservation-field">
+              <label>Check Out</label>
+              <input type="date" />
+            </div>
+
+            {/* Rooms */}
+            <div className="reservation-field">
+              <label>Room</label>
+              <select>
+                <option>1 Room</option>
+                <option>2 Rooms</option>
+                <option>3 Rooms</option>
+                <option>4+ Rooms</option>
+              </select>
+            </div>
+
+            {/* Button */}
+            <button type="submit" className="reservation-btn">
+              CHECK NOW
+            </button>
           </form>
         </div>
       </section>
 
-      <section className="room-section">
-        <div className="room-left">
-          <span className="subtitle">Our Features</span>
-          <h1 className="title">Single Room</h1>
-          <p className="desc">
+      {/* Room Section */}
+      <section className="bookingarea-room-section">
+        <div className="bookingarea-room-left">
+          <span className="bookingarea-subtitle">Our Features</span>
+          <h1 className="bookingarea-title">Single Room</h1>
+          <p className="bookingarea-desc">
             Phasellus semper vehicula eros, non ultricies neque rhoncus sed.
             Morbi aliquam ex in dui aliquet consectetur. Fusce pellentesque
             turpis ut lorem elementum commodo.

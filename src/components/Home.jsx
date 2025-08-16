@@ -10,7 +10,7 @@ import ComingSoon from "../pages/ComingSoon";
 import RoomStyle from "../pages/RoomStyle";
 import RoomModern from "../pages/RoomModern";
 import RoomList from "../pages/RoomList";
-import RoomDetails from "../pages/RoomStyle";
+import RoomDetails from "../pages/RoomDetail";
 import BlogGrid from "../pages/BlogList";
 import BlogStandard from "../pages/BlogStandards";
 import BlogDetails from "../pages/BlogDetails";
