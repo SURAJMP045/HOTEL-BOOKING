@@ -1,95 +1,170 @@
+/* =============================
+   Container
+   ============================= */
 .single-room-container {
-  width: 70%;
-  margin: 2rem auto;
+  width: 80%;
+  margin: 2.5rem auto;
+  font-family: "Poppins", sans-serif;
+  color: #222;
 }
 
-/* Card layout */
+/* =============================
+   Card Layout
+   ============================= */
 .single-room-card {
   display: flex;
-  align-items: center;
-  border: 1px solid #eee;
-  border-radius: 5px;
+  align-items: stretch;
+  border-radius: 16px;
   overflow: hidden;
   background: #fff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Left - Image */
+.single-room-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* =============================
+   Left - Image
+   ============================= */
 .room-image {
-  flex: 1;
+  flex: 1.2;
+  overflow: hidden;
 }
 
 .room-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.5s ease;
 }
 
-/* Middle - Details */
+.room-image img:hover {
+  transform: scale(1.08);
+}
+
+/* =============================
+   Middle - Details
+   ============================= */
 .room-details {
   flex: 2;
-  padding: 1.5rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .room-details h3 {
-  font-size: 1.4rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+  color: #111;
 }
 
 .room-details p {
   font-size: 0.95rem;
   color: #555;
-  margin-bottom: 1rem;
-  line-height: 1.5;
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
 }
 
 .room-meta {
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
   font-size: 0.9rem;
   color: #333;
+  font-weight: 500;
 }
 
-/* Right - Extra Info */
+.room-meta span {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: color 0.3s ease;
+}
+
+.room-meta span:hover {
+  color: #d4af37;
+}
+
+/* =============================
+   Right - Extra Info
+   ============================= */
 .room-extra {
   flex: 1;
-  padding: 1.5rem;
-  border-left: 1px solid #ddd;
+  padding: 2rem 1.5rem;
+  border-left: 1px solid #f0f0f0;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 0.75rem;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .room-price {
-  font-weight: bold;
-  color: #caa65b;
-  font-size: 1rem;
+  font-weight: 700;
+  color: #d4af37;
+  font-size: 1.3rem;
 }
 
 .room-price span {
-  font-weight: normal;
+  font-weight: 400;
+  color: #666;
+  font-size: 0.9rem;
 }
 
 .room-rating {
   display: flex;
   align-items: center;
   font-size: 0.95rem;
+  color: #444;
+  gap: 0.4rem;
+}
+
+.room-rating strong {
+  font-weight: 600;
+  margin-left: 0.3rem;
 }
 
 .room-rating .reviews {
-  margin-left: 0.3rem;
-  color: #777;
+  margin-left: 0.4rem;
+  color: #888;
+  font-size: 0.85rem;
 }
 
+/* Read More Button */
 .read-more {
   text-decoration: none;
-  font-weight: bold;
-  color: #000;
-  display: flex;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #111;
+  display: inline-flex;
   align-items: center;
-  gap: 0.3rem;
+  gap: 0.4rem;
+  padding: 0.6rem 1rem;
+  border-radius: 30px;
+  background: #f9f9f9;
+  transition: all 0.3s ease;
 }
 
 .read-more:hover {
-  color: #caa65b;
+  background: #d4af37;
+  color: #fff;
+  transform: translateX(5px);
+}
+
+/* =============================
+   Responsive
+   ============================= */
+@media (max-width: 1024px) {
+  .single-room-card {
+    flex-direction: column;
+  }
+
+  .room-extra {
+    border-left: none;
+    border-top: 1px solid #eee;
+    align-items: flex-start;
+  }
 }

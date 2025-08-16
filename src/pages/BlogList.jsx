@@ -8,7 +8,9 @@ const BlogList = () => {
   return (
     <>
       <div className='roomstyle-body'>
-      <Navbar/>
+      <div className="navbar-wrapper">
+          <Navbar />
+        </div>
     <section
       className="roomstyle-hero"
       style={{ backgroundImage: `url(${aboutBg})` }}

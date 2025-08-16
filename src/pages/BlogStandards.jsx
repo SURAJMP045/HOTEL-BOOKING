@@ -2,14 +2,16 @@ import React from 'react'
 import aboutBg from '../assets/contact-bg.png'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import RoomDetailLayout from '../components/RoomDetailsLayout'
+import RoomDetailLayout from './RoomDetailsLayout'
 import '../assets/stylesheet/pagestyle/RoomStyle.css'
 
 const BlogStandards = () => {
   return (
     <>
       <div className='roomstyle-body'>
-      <Navbar/>
+      <div className="navbar-wrapper">
+          <Navbar />
+        </div>
     <section
       className="roomstyle-hero"
       style={{ backgroundImage: `url(${aboutBg})` }}

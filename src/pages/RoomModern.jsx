@@ -9,7 +9,9 @@ const RoomModern = () => {
   return (
     <>
       <div className='roommodern-body'>
-      <Navbar/>
+      <div className="navbar-wrapper">
+          <Navbar />
+        </div>
     <section
       className="roommodern-hero"
       style={{ backgroundImage: `url(${roommodernBg})` }}

@@ -1,0 +1,134 @@
+.navbar-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 15px 40px;
+}
+
+/* =============================
+   Room Section Layout
+   ============================= */
+.room-section {
+  width: 90%;
+  margin: 3rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* =============================
+   Room List Grid
+   ============================= */
+.room-list {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 2rem;
+}
+
+/* =============================
+   Room Card
+   ============================= */
+.room-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.room-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.15);
+}
+
+/* =============================
+   Room Image
+   ============================= */
+.room-img {
+  position: relative;
+  width: 100%;
+  height: 230px;
+  overflow: hidden;
+}
+
+.room-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.room-card:hover .room-img img {
+  transform: scale(1.05);
+}
+
+.room-price {
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* =============================
+   Room Info
+   ============================= */
+.room-info {
+  padding: 1.2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.room-info h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #222;
+  transition: color 0.3s ease;
+}
+
+.room-card:hover .room-info h4 {
+  color: #caa65b;
+}
+
+.room-info p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* =============================
+   Room Meta
+   ============================= */
+.room-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #444;
+  margin-top: auto;
+}
+
+/* =============================
+   Responsive
+   ============================= */
+@media (max-width: 1024px) {
+  .room-list {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .room-list {
+    grid-template-columns: 1fr;
+  }
+}

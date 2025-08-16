@@ -201,3 +201,133 @@
     grid-template-columns: 1fr; /* stack for tablets & below */
   }
 }
+
+
+/* =============================
+   Navbar Wrapper
+   ============================= */
+.navbar-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 15px 40px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* =============================
+   Body Styling
+   ============================= */
+.roomlist-body {
+  background: #f5f7fa;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  padding-top: 90px; /* space for fixed navbar */
+}
+
+/* =============================
+   Hero Section
+   ============================= */
+.roomlist-hero {
+  width: 100%;
+  height: 75vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Dark Overlay with Gradient */
+.roomlist-hero .overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0,0,0,0.75), rgba(0,0,0,0.35));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(3px);
+}
+
+/* Hero Content */
+.roomlist-hero-content {
+  text-align: center;
+  color: #fff;
+  animation: fadeUp 1s ease-in-out;
+  padding: 0 1rem;
+}
+
+.roomlist-hero-content h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  margin-bottom: 0.8rem;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  background: linear-gradient(90deg, #d4af37, #ffdd8d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.roomlist-hero-content p {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #eaeaea;
+}
+
+/* =============================
+   Breadcrumbs
+   ============================= */
+.breadcrumb-home {
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.breadcrumb-home:hover {
+  color: #d4af37;
+}
+
+.breadcrumb-current {
+  color: #ffd700;
+  font-weight: 600;
+}
+
+/* =============================
+   Animations
+   ============================= */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* =============================
+   Responsive
+   ============================= */
+@media (max-width: 992px) {
+  .roomlist-hero {
+    height: 65vh;
+  }
+  .roomlist-hero-content h1 {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .roomlist-hero {
+    height: 55vh;
+  }
+  .roomlist-hero-content h1 {
+    font-size: 2rem;
+  }
+  .roomlist-hero-content p {
+    font-size: 0.9rem;
+  }
+}

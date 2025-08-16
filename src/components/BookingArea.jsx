@@ -1,6 +1,6 @@
 import React from "react";
 import "../assets/stylesheet/BookingArea.css";
-import BookingAreaPng from '../assets/BookingArea.png'
+import BookingAreaPng from "../assets/BookingArea.png";
 
 const BookingArea = () => {
   return (
@@ -12,68 +12,78 @@ const BookingArea = () => {
         </div>
 
         <div className="booking-form-container">
-      <form className="booking-form">
-        <input type="date" placeholder="Check-in" />
-        <input type="date" placeholder="Check-out" />
-        <select>
-          <option>1 Guest</option>
-          <option>2 Guests</option>
-          <option>3 Guests</option>
-          <option>4+ Guests</option>
-        </select>
-        <button type="submit">Search</button>
-      </form>
-    </div>
+          <form className="booking-form">
+            <input type="date" placeholder="Check-in" />
+            <input type="date" placeholder="Check-out" />
+            <select>
+              <option>1 Guest</option>
+              <option>2 Guests</option>
+              <option>3 Guests</option>
+              <option>4+ Guests</option>
+            </select>
+            <button type="submit">Search</button>
+          </form>
+        </div>
       </section>
 
-      <section class="room-section">
-  <div class="room-left">
-    <span class="subtitle">Our Features</span>
-    <h1 class="title">Single Room</h1>
-    <p class="desc">
-      Phasellus semper vehicula eros, non ultricies neque rhoncus sed. 
-      Morbi aliquam ex in dui aliquet consectetur. Fusce pellentesque 
-      turpis ut lorem elementum commodo.
-    </p>
+      <section className="room-section">
+        <div className="room-left">
+          <span className="subtitle">Our Features</span>
+          <h1 className="title">Single Room</h1>
+          <p className="desc">
+            Phasellus semper vehicula eros, non ultricies neque rhoncus sed.
+            Morbi aliquam ex in dui aliquet consectetur. Fusce pellentesque
+            turpis ut lorem elementum commodo.
+          </p>
 
-    <div class="phone-box">
-      <div class="phone-icon">
-        <i class="fas fa-phone-alt"></i>
-      </div>
-      <span class="phone-number">+123 (458) 585 568</span>
-    </div>
-  </div>
+          <div className="phone-box">
+            <div className="phone-icon">
+              <i className="fas fa-phone-alt"></i>
+            </div>
+            <span className="phone-number">+123 (458) 585 568</span>
+          </div>
+        </div>
 
-  <div class="room-center">
-    <img src={BookingAreaPng} alt="Single Room" />
-  </div>
+        <div className="room-center">
+          <img src={BookingAreaPng} alt="Single Room" />
+        </div>
 
-  <div class="room-right">
-    <div class="feature">
-      <div class="icon-circle"><i class="fas fa-key"></i></div>
-      <div>
-        <h3>Smart Key</h3>
-        <p>Phasellus semper vehicula eros, non ultricies neque rhoncus sed</p>
-      </div>
-    </div>
-    <div class="feature">
-      <div class="icon-circle"><i class="fas fa-utensils"></i></div>
-      <div>
-        <h3>Breakfast</h3>
-        <p>Phasellus semper vehicula eros, non ultricies neque rhoncus sed</p>
-      </div>
-    </div>
-    <div class="feature">
-      <div class="icon-circle"><i class="fas fa-wifi"></i></div>
-      <div>
-        <h3>Home Wifi</h3>
-        <p>Phasellus semper vehicula eros, non ultricies neque rhoncus sed</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
+        <div className="room-right">
+          <div className="feature">
+            <div className="icon-circle">
+              <i className="fas fa-key"></i>
+            </div>
+            <div>
+              <h3>Smart Key</h3>
+              <p>
+                Phasellus semper vehicula eros, non ultricies neque rhoncus sed
+              </p>
+            </div>
+          </div>
+          <div className="feature">
+            <div className="icon-circle">
+              <i className="fas fa-utensils"></i>
+            </div>
+            <div>
+              <h3>Breakfast</h3>
+              <p>
+                Phasellus semper vehicula eros, non ultricies neque rhoncus sed
+              </p>
+            </div>
+          </div>
+          <div className="feature">
+            <div className="icon-circle">
+              <i className="fas fa-wifi"></i>
+            </div>
+            <div>
+              <h3>Home Wifi</h3>
+              <p>
+                Phasellus semper vehicula eros, non ultricies neque rhoncus sed
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

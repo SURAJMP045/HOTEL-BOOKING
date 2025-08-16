@@ -19,7 +19,9 @@ const ContactHero = () => {
   return (
     <>
      <div className="contact-body">
-      <Navbar/>
+      <div className="navbar-wrapper">
+          <Navbar />
+        </div>
       {/* HERO */}
       <section
         className="contact-hero"

@@ -3,12 +3,15 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import aboutBg from '../assets/contact-bg.png'
 import RoomCard from '../components/RoomCard'
+import '../assets/stylesheet/pagestyle/RoomList.css'
 
 const RoomList = () => {
   return (
     <>
       <div className='roomlist-body'>
-      <Navbar/>
+      <div className="navbar-wrapper">
+          <Navbar />
+        </div>
     <section
       className="roomlist-hero"
       style={{ backgroundImage: `url(${aboutBg})` }}
