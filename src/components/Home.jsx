@@ -13,9 +13,10 @@ import RoomList from "../pages/RoomList";
 import RoomDetails from "../pages/RoomStyle";
 import BlogGrid from "../pages/BlogList";
 import BlogStandard from "../pages/BlogStandards";
-import BlogDetails from "../pages/BlogStandards";
+import BlogDetails from "../pages/BlogDetails";
 import AboutPage from "./About";
 import ContactPage from "./Contact";
+import ContactBox from "./ContactBox";
 
 // Keep only truly heavy components lazy-loaded
 const HeaderSection = React.lazy(() => import("./HeaderSection"));
@@ -30,6 +31,7 @@ function HomePage() {
   return (
     <>
       <HeaderSection />
+      <ContactBox/>
       <CompanyName />
       <HeroSection />
       <LuxuryRooms />
