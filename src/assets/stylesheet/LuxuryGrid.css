@@ -56,6 +56,7 @@
 .room-info h3 {
   font-size: 1.2rem;
   margin-bottom: 0.3rem;
+  color: #ddd;
 }
 
 .room-info .price {
@@ -67,7 +68,7 @@
 .room-info p {
   font-size: 0.85rem;
   margin-bottom: 0.8rem;
-  color: #ddd;
+  color: #b6b6b6;
 }
 
 .room-icons {
