@@ -1,40 +1,56 @@
+/* ==== TEAM SECTION ==== */
 .team-section {
   text-align: center;
-  padding: 60px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 80px 20px;
+  max-width: 1280px;
+  margin: -10px auto;
+  font-family: 'Poppins', sans-serif;
 }
 
 .team-subtitle {
-  color: #b68c50;
+  color: #c39a46;
   font-weight: 600;
-  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+  font-size: 14px;
 }
 
 .team-title {
-  font-size: 42px;
+  font-size: 40px;
   font-weight: 700;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  color: #111;
+  line-height: 1.3;
 }
 
 .team-container {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 40px 0;
+  padding: 20px 0;
 }
 
+/* ==== TEAM CARD ==== */
 .team-card {
-  background: white;
-  border-radius: 8px;
+  background: #fff;
+  border-radius: 18px;
   overflow: hidden;
   max-width: 300px;
   text-align: center;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  position: relative;
 }
 
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
+}
+
+/* ==== IMAGE WRAPPER ==== */
 .team-img-wrapper {
   position: relative;
   overflow: hidden;
@@ -45,20 +61,24 @@
   height: 320px;
   object-fit: cover;
   display: block;
+  transition: transform 0.4s ease;
 }
 
+.team-card:hover .team-image {
+  transform: scale(1.08);
+}
+
+/* ==== OVERLAY WITH SOCIALS ==== */
 .team-overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0,0,0,0.7);
+  inset: 0;
+  background: rgba(15, 15, 15, 0.6);
+  backdrop-filter: blur(6px);
   display: flex;
   align-items: center;
   justify-content: center;
   opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.4s ease;
 }
 
 .team-card:hover .team-overlay {
@@ -67,42 +87,43 @@
 
 .team-socials {
   display: flex;
-  gap: 15px;
+  gap: 14px;
 }
 
 .team-socials a {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 35px;
-  width: 35px;
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
-  background-color: transparent;
-  border: 1px solid white;
-  color: white;
-  transition: background 0.3s;
-  font-size: 14px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 16px;
+  transition: all 0.3s ease;
 }
 
 .team-socials a:hover {
-  background-color: #b68c50;
-  border-color: #b68c50;
-  color: white;
+  background: #c39a46;
+  color: #fff;
+  transform: translateY(-3px);
 }
 
+/* ==== INFO SECTION ==== */
 .team-info {
   padding: 20px;
 }
 
 .team-info h3 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   margin: 0;
-  color: #0f0f0f;
+  color: #222;
 }
 
 .team-info p {
   margin-top: 6px;
-  font-size: 14px;
-  color: #b68c50;
+  font-size: 15px;
+  font-weight: 500;
+  color: #c39a46;
 }

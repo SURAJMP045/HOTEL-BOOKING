@@ -1,15 +1,22 @@
-/* Container layout */
 .room-section {
   display: flex;
   gap: 2rem;
   padding: 2rem;
   background-color: #f9f9f9;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
-/* Sidebar categories */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Categories */
 .room-categories {
-  min-width: 220px;
+  flex: 0 0 220px;
   background-color: white;
   padding: 1.5rem;
   border-radius: 12px;
@@ -43,12 +50,13 @@
   color: #2a71d0;
 }
 
-/* Room list grid */
+/* Room list */
 .room-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
   flex: 1;
+  min-width: 0;
 }
 
 /* Card */
@@ -59,18 +67,20 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
 }
 
 .room-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  transform: translateY(-6px);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
 }
 
-/* Image styling with overlay effect */
+/* Image */
 .room-img {
   position: relative;
   overflow: hidden;
-  height: 180px;
+  height: 200px;
 }
 
 .room-img img {
@@ -82,7 +92,7 @@
 
 .room-card:hover .room-img img {
   transform: scale(1.05);
-  filter: brightness(0.85) blur(1px);
+  filter: brightness(0.85);
 }
 
 /* Price tag */
@@ -98,13 +108,14 @@
   font-size: 0.9rem;
 }
 
-/* Room info */
+/* Info */
 .room-info {
   padding: 1rem;
+  flex-grow: 1;
 }
 
 .room-info h4 {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   color: #222;
   margin-bottom: 0.5rem;
 }
@@ -118,13 +129,13 @@
 .room-meta {
   display: flex;
   justify-content: space-between;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: #666;
 }
 
-/* Booking sidebar */
+/* Booking form */
 .booking-form {
-  width: 260px;
+  flex: 0 0 260px;
   background: white;
   padding: 2rem;
   border: 1px solid #eee;
@@ -152,13 +163,13 @@
   gap: 1rem;
 }
 
+.booking-form input,
 .booking-form select {
   padding: 0.9rem;
   font-size: 1rem;
   border: 1px solid #ddd;
   border-radius: 4px;
   background-color: #fefefe;
-  cursor: pointer;
 }
 
 .booking-form button {
@@ -171,7 +182,6 @@
   border-radius: 4px;
   cursor: pointer;
   text-align: left;
-  transition: background-color 0.3s ease;
 }
 
 .booking-form button span {
@@ -181,4 +191,21 @@
 
 .booking-form button:hover {
   background-color: #b89147;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .room-section {
+    flex-direction: column;
+  }
+  .room-categories,
+  .booking-form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .room-list {
+    grid-template-columns: 1fr;
+  }
 }

@@ -10,24 +10,28 @@ const ServicePage = () => {
   return (
     <>
       <div className='service-body'>
-      <Navbar/>
-    <section
-      className="service-hero"
-      style={{ backgroundImage: `url(${aboutBg})` }}
-    >
-      <div className="overlay">
-        <div className="service-hero-content">
-          <h1>Services Details</h1>
-          <p>
-            <span className="breadcrumb-home">Home</span> - <span className="breadcrumb-current">Services Details</span>
-          </p>
+        <div className="navbar-wrapper">
+          <Navbar />
         </div>
+        <section
+          className="service-hero"
+          style={{ backgroundImage: `url(${aboutBg})` }}
+        >
+          <div className="overlay">
+            <div className="service-hero-content fade-in">
+              <h1>Our Services</h1>
+              <p className="breadcrumbs">
+                <span className="breadcrumb-home">Home</span> 
+                <span className="breadcrumb-divider"> / </span> 
+                <span className="breadcrumb-current">Services</span>
+              </p>
+            </div>
+          </div>
+        </section>
+        <Services />
+        <CustomerBenefits />
+        <Footer />
       </div>
-    </section>
-    <Services/>
-    <CustomerBenefits/>
-    <Footer/>
-    </div>
     </>
   )
 }

@@ -20,7 +20,9 @@ const AboutPage = () => {
   return (
     <div className="about-body">
       <Suspense fallback={<Loader />}>
+        <div className="Navbar-wrapper">
         <Navbar />
+        </div>
       </Suspense>
 
       <section

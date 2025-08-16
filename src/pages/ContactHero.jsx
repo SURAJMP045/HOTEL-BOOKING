@@ -1,6 +1,5 @@
 import React from "react";
 import "../assets/stylesheet/pagestyle/Contact.css";
-import contactBg from "../assets/contact-bg.png";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import MapSection from "../components/MapSection";

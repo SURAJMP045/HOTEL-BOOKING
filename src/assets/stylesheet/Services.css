@@ -1,45 +1,75 @@
 .services-container {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 40px;
-  background: #f9f9f9;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f5f7fa, #eaeef3);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .service-card {
   background: #fff;
-  padding: 20px;
-  width: 220px;
+  padding: 30px 20px;
+  width: 250px;
   text-align: center;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease-in-out;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
 
-.service-card:hover {
-  transform: translateY(-5px);
+.service-card::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, #ff6b00, #ff9900);
+  transition: 0.4s;
+  z-index: 0;
+}
+
+.service-card:hover::before {
+  top: 0;
+}
+
+.service-card * {
+  position: relative;
+  z-index: 1;
 }
 
 .service-icon {
-  font-size: 40px;
+  font-size: 48px;
   color: #ff6b00;
-  margin-bottom: 10px;
-  transition: color 0.3s ease-in-out;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .service-card:hover .service-icon {
-  color: #ff9900;
+  transform: scale(1.2);
+  color: #fff;
 }
 
 .service-card h3 {
-  font-size: 18px;
-  margin-bottom: 8px;
+  font-size: 20px;
+  margin-bottom: 10px;
   color: #333;
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
 
 .service-card p {
-  font-size: 14px;
+  font-size: 15px;
   color: #666;
-  line-height: 1.5;
+  line-height: 1.6;
+  transition: color 0.3s ease;
+}
+
+.service-card:hover h3,
+.service-card:hover p {
+  color: #fff;
 }

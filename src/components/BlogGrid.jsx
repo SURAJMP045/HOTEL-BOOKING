@@ -1,5 +1,4 @@
 import React from 'react';
-import '../assets/stylesheet/RoomList.css';
 
 const rooms = [
   {
